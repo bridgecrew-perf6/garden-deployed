@@ -4,6 +4,7 @@ import {
   UserPlus,
   Discount2,
   Receipt2,
+  TemperatureCelsius,
   Coin,
   ArrowUpRight,
   ArrowDownRight,
@@ -41,6 +42,7 @@ const icons = {
   discount: Discount2,
   receipt: Receipt2,
   coin: Coin,
+  temperature: TemperatureCelsius,
 };
 
 interface StatsGridProps {
@@ -76,7 +78,7 @@ export function StatsGrid({ data }: StatsGridProps) {
         </Group>
 
         <Text size="xs" color="dimmed" mt={7}>
-          Compared to previous month
+          Compared to last update
         </Text>
       </Paper>
     );
